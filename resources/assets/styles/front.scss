@@ -1,0 +1,22 @@
+/**
+ * Front-end styles.
+ */
+
+/**
+ * Project-specific configuration.
+ */
+@import "front/config";
+
+/**
+ * Vendor styles.
+ */
+@import "vendor/font-awesome/scss/font-awesome";
+@import "vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/**
+ * Project styles.
+ */
+@import "front/project-elements";
+@import "front/components";
+@import "front/objects";
+@import "front/layout";
