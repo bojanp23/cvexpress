@@ -8445,9 +8445,6 @@ button.close {
  * Project-elements.
  */
 /**
- * Components.
- */
-/**
  * Objects.
  */
 /**
@@ -8459,5 +8456,64 @@ html {
   min-height: 100%;
   font-size: 16px;
   background-color: #fafafa; }
+
+/**
+ * Components.
+ */
+.navbar {
+  padding: 20px;
+  background: transparent;
+  border: 0; }
+  @media (max-width: 460px) {
+    .navbar .navbar-collapse,
+    .navbar .navbar-form {
+      border: 0;
+      box-shadow: none; } }
+  .navbar .navbar-nav-link::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    content: "";
+    background: #ad0000;
+    transition: width .2s; }
+  .navbar .navbar-nav-link:hover, .navbar .navbar-nav-link:focus {
+    color: #ad0000;
+    background: transparent; }
+    .navbar .navbar-nav-link:hover::after, .navbar .navbar-nav-link:focus::after {
+      width: 100%;
+      content: ""; }
+
+.navbar-brand {
+  height: auto;
+  padding: 0; }
+
+.navbar-logo {
+  width: 277px; }
+  @media (max-width: 460px) {
+    .navbar-logo {
+      width: 200px; } }
+
+.navbar-nav-link {
+  position: relative;
+  color: #fff; }
+
+.navbar-nav::after {
+  position: relative;
+  display: block;
+  z-index: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: #fff; }
+
+.navbar-nav-listItem:last-child:hover::after, .navbar-nav-listItem:last-child:focus::after {
+  width: 0;
+  content: ""; }
 
 /*# sourceMappingURL=front.css.map */
