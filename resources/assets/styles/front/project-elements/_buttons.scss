@@ -1,0 +1,45 @@
+.hero-link {
+   display: inline-block;
+
+   padding: 15px 35px;
+   margin-right: 30px;
+
+   color: #fff;
+
+   border-radius: 5px;
+
+   transition: all .2s;
+
+   &:hover,
+   &:focus {
+      color: #fff;
+
+      text-decoration: none;
+   }
+}
+
+.hero-link--primary {
+   background-color: #ad0000;
+
+   border: 1px solid #ad0000;
+
+   &:hover,
+   &:focus {
+      background-color: transparent;
+
+      border: 1px solid #fff;
+   }
+}
+
+.hero-link--secondary {
+   background-color: transparent;
+
+   border: 1px solid #fff;
+
+   &:hover,
+   &:focus {
+      background-color: #ad0000;
+
+      border: 1px solid #ad0000;
+   }
+}
