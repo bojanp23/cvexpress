@@ -8480,6 +8480,7 @@ html {
   height: 100%;
   min-height: 100%;
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
   background-color: #fafafa; }
 
 .section {
@@ -8555,6 +8556,59 @@ html {
       width: 100%;
       height: auto; } }
 
+.appInfo {
+  margin-left: 0;
+  margin-right: 0; }
+  .appInfo:before, .appInfo:after {
+    content: " ";
+    display: table; }
+  .appInfo:after {
+    clear: both; }
+
+.appInfo-column {
+  position: relative;
+  min-height: 1px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  @media (min-width: 768px) {
+    .appInfo-column {
+      float: left;
+      width: 33.3333333333%; } }
+
+.appInfo-title {
+  position: relative;
+  padding: 90px 0 10px;
+  margin: 0 0 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px; }
+  .appInfo-title::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    content: "";
+    background-image: url("../images/icon.png");
+    background-size: 70px 70px;
+    background-position: center; }
+  .appInfo-title::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    margin: 0 auto;
+    content: "";
+    background-color: #ad0000; }
+
+.appInfo-lead {
+  text-align: center; }
+
 /**
  * Components.
  */
@@ -8622,7 +8676,9 @@ html {
   height: 900px;
   padding: 350px 0 0;
   margin-top: -135px;
-  background-image: url(../images/hero.jpg); }
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover; }
   @media (max-width: 460px) {
     .hero {
       height: auto;
@@ -8632,7 +8688,7 @@ html {
       background-color: #000; } }
 
 .hero-content {
-  width: 75%;
+  width: 80%;
   color: #fff; }
   @media (max-width: 460px) {
     .hero-content {
@@ -8641,6 +8697,7 @@ html {
 .hero-title {
   margin: 0 0 30px;
   font-size: 78px;
+  font-weight: bold;
   color: #fff; }
   @media (max-width: 460px) {
     .hero-title {
@@ -8657,6 +8714,7 @@ html {
   border-radius: 5px; }
 
 .hero-lead {
+  padding-right: 30px;
   margin-bottom: 30px; }
 
 .hero-linkGroup {
