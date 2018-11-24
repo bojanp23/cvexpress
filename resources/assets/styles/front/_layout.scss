@@ -115,6 +115,14 @@
 
 .appInfo-column {
   @include make-sm-column(4, 100px);
+
+  @media(max-width: 460px) {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .appInfo-title {

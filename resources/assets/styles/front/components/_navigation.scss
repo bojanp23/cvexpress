@@ -13,6 +13,9 @@
 
   .navbar-collapse,
   .navbar-form {
+    margin-right: 0;
+    margin-left: 0;
+    
     @media(max-width: 460px) {
       border: 0;
       box-shadow: none;
@@ -52,6 +55,16 @@
         content: "";
       }
     }
+  }
+}
+
+.navbar-toggle {
+  background-color: #ad0000;
+
+  .icon-bar {
+    height: 1px;
+
+    background-color: #000;
   }
 }
 

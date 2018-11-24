@@ -27,7 +27,7 @@
 
   @media(max-width: 460px) {
     padding: 0 30px;
-    margin: 0 0 15px;
+    margin: 0 0 40px;
   }
 }
 
@@ -36,6 +36,11 @@
 
   @media(max-width: 460px) {
     text-align: center;
+    margin: 0 0 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -57,6 +62,10 @@
 
 .footer-lead {
   margin-bottom: 20px;
+
+  @media(max-width: 460px) {
+    text-align: center;
+  }
 }
 
 .footer-list {
@@ -158,6 +167,11 @@
   }
 }
 
+.footer-socialIcons {
+  @media(max-width: 460px) {
+    text-align: center;
+  }
+}
 
 .footer-socialLink {
   display: inline-block;

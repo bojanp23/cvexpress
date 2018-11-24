@@ -96,6 +96,12 @@
    }
 }
 
+.sectionSlider-lead {
+  @media(max-width: 460px) {
+    text-align: center;
+  }
+}
+
 .slick-prev,
 .slick-next {
    width: 50px;
