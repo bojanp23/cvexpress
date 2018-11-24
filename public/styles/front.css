@@ -8444,32 +8444,53 @@ button.close {
 /**
  * Project-elements.
  */
-.hero-link {
+.button {
   display: inline-block;
   padding: 15px 35px;
   margin-right: 30px;
   color: #fff;
   border-radius: 5px;
   transition: all .2s; }
-  .hero-link:hover, .hero-link:focus {
+  .button:hover, .button:focus {
     color: #fff;
     text-decoration: none; }
   @media (max-width: 460px) {
-    .hero-link {
+    .button {
       margin-right: 20px; } }
+  @media (max-width: 320px) {
+    .button {
+      margin-right: 10px; } }
+  .button:last-child {
+    margin-right: 0; }
 
-.hero-link--primary {
+.button--primary {
   background-color: #ad0000;
   border: 1px solid #ad0000; }
-  .hero-link--primary:hover, .hero-link--primary:focus {
+  .button--primary:hover, .button--primary:focus {
     background-color: transparent;
     border: 1px solid #fff; }
 
-.hero-link--secondary {
+.button--secondary {
   background-color: transparent;
   border: 1px solid #fff; }
-  .hero-link--secondary:hover, .hero-link--secondary:focus {
+  .button--secondary:hover, .button--secondary:focus {
     background-color: #ad0000;
+    border: 1px solid #ad0000; }
+
+.button--navbar {
+  padding: 3px 7px;
+  outline: 0; }
+
+.button--ourPrice {
+  position: absolute;
+  left: 50%;
+  bottom: -22px;
+  padding: 10px 15px;
+  font-weight: bold;
+  transform: translateX(-50%); }
+  .button--ourPrice:hover, .button--ourPrice:focus {
+    color: #ad0000;
+    background-color: #fff;
     border: 1px solid #ad0000; }
 
 /**
@@ -8614,6 +8635,92 @@ html {
 .appInfo-lead {
   text-align: center; }
 
+.section--ourPrice {
+  padding: 0; }
+
+.ourPrice {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative; }
+  .ourPrice:before, .ourPrice:after {
+    content: " ";
+    display: table; }
+  .ourPrice:after {
+    clear: both; }
+
+.ourPrice-column {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .ourPrice-column {
+      float: left;
+      width: 50%; } }
+  .ourPrice-column:first-child img {
+    width: 100%;
+    transform: translateY(-50px); }
+  @media (max-width: 460px) {
+    .ourPrice-column:first-child {
+      display: none; } }
+  .ourPrice-column:nth-child(2) {
+    padding: 100px 15px; }
+    @media (max-width: 460px) {
+      .ourPrice-column:nth-child(2) {
+        padding: 50px 15px; } }
+
+.section-title--ourPrice {
+  padding-left: 60px;
+  text-align: left; }
+
+.section-subtitle--ourPrice {
+  margin-left: 60px; }
+
+.ourPrice-list {
+  list-style: none;
+  margin: 0 0 50px;
+  padding: 0 0 0 55px; }
+
+.ourPrice-listItem {
+  position: relative;
+  margin-bottom: 15px; }
+  .ourPrice-listItem::before {
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    width: 20px;
+    height: 10px;
+    content: "";
+    transform: translateY(-50%) rotate(-45deg);
+    border-bottom: 3px solid #ad0000;
+    border-left: 3px solid #ad0000; }
+
+.ourPrice-priceTag {
+  display: block;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+  background-color: #ad0000;
+  border: 10px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0px 0 40px #aaa; }
+
+.ourPrice-price {
+  position: relative;
+  top: 50%;
+  font-size: 82px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  transform: translateY(-70%); }
+
+.ourPrice-currency {
+  position: relative;
+  top: -4px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center; }
+
 /**
  * Components.
  */
@@ -8669,6 +8776,9 @@ html {
   @media (max-width: 460px) {
     .navbar-logo {
       width: 200px; } }
+  @media (max-width: 320px) {
+    .navbar-logo {
+      width: 150px; } }
 
 .navbar-nav-link {
   position: relative;
