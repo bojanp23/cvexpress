@@ -15,7 +15,7 @@
   .navbar-form {
     margin-right: 0;
     margin-left: 0;
-    
+
     @media(max-width: 460px) {
       border: 0;
       box-shadow: none;
@@ -79,6 +79,10 @@
 
   @media(max-width: 460px) {
     width: 200px;
+  }
+
+  @media(max-width: 320px) {
+    width: 150px;
   }
 }
 
