@@ -25,6 +25,10 @@
     }
   }
 
+  @media(min-width: 461px) and (max-width: 1024px) {
+    padding-right: 30px;
+  }
+
   @media(max-width: 460px) {
     padding: 0 30px;
     margin: 0 0 40px;
@@ -33,6 +37,11 @@
 
 .footer-column--small {
   @include make-sm-column(3, 100px);
+
+  @media(min-width: 461px) and (max-width: 1024px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 
   @media(max-width: 460px) {
     text-align: center;

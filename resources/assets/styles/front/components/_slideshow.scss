@@ -129,6 +129,10 @@
    &::before {
       display: none;
    }
+
+   @media(max-width: 1024px) {
+     right: 0;
+   }
 }
 
 .slick-prev {
@@ -149,5 +153,9 @@
 
    &::before {
       display: none;
+   }
+
+   @media(max-width: 1024px) {
+     left: 0;
    }
 }

@@ -1,7 +1,5 @@
 .header {
-  @media(max-width: 460px) {
     background-color: #000;
-  }
 }
 
 .navbar {
@@ -120,5 +118,42 @@
         content: "";
       }
     }
+  }
+}
+
+// Change Navigation Breakpoint
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+
+  .navbar-right {
+      float: none !important;
+  }
+
+  .navbar-toggle {
+      display: block;
+  }
+
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+
+  .navbar-nav>li {
+      float: none;
+  }
+
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .collapse.in{
+      display:block !important;
   }
 }

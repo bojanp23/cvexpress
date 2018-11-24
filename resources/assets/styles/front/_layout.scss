@@ -16,7 +16,7 @@
  .section {
     padding: 100px 0;
 
-    @media(max-width: 460px) {
+    @media(max-width: 768px) {
       padding: 50px 0;
    }
 }
@@ -114,9 +114,9 @@
 }
 
 .appInfo-column {
-  @include make-sm-column(4, 100px);
+  @include make-md-column(4, 100px);
 
-  @media(max-width: 460px) {
+  @media(max-width: 768px) {
     margin-bottom: 50px;
 
     &:last-child {
@@ -186,7 +186,7 @@
 }
 
 .ourPrice-column {
-  @include make-sm-column(6);
+  @include make-md-column(6);
 
   &:first-child {
     img {
@@ -195,7 +195,7 @@
       transform: translateY(-50px);
     }
 
-    @media(max-width: 460px) {
+    @media(max-width: 768px) {
       display: none;
     }
   }
@@ -203,7 +203,7 @@
   &:nth-child(2) {
     padding: 100px 15px;
 
-    @media(max-width: 460px) {
+    @media(max-width: 1024px) {
       padding: 50px 15px;
     }
   }
@@ -213,10 +213,23 @@
   padding-left: 60px;
 
   text-align: left;
+
+  @media(max-width: 768px) {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .section-subtitle--ourPrice {
   margin-left: 60px;
+
+  @media(max-width: 768px) {
+    display: block;
+
+    width: 90px;
+
+    margin: 0 auto;
+  }
 }
 
 .ourPrice-list {
