@@ -1,0 +1,64 @@
+.hero {
+   height: 900px;
+
+   padding: 350px 0 0;
+   margin-top: -135px;
+
+   background-image: url(../images/hero.jpg);
+
+   @media(max-width: 460px) {
+      height: auto;
+
+      padding: 0 0 50px;
+      margin-top: 0;
+
+      background-image: none;
+      background-color: #000;
+   }
+}
+
+.hero-content {
+   width: 75%;
+
+   color: #fff;
+
+   @media(max-width: 460px) {
+      width: 100%;
+   }
+}
+
+.hero-title {
+    margin: 0 0 30px;
+
+   font-size: 78px;
+
+   color: #fff;
+
+   @media(max-width: 460px) {
+      font-size: 42px;
+   }
+}
+
+.hero-subtitle {
+   display: inline-block;
+
+   padding: 5px 15px;
+   margin-bottom: 30px;
+
+   font-size: 18px;
+   font-weight: normal;
+
+   color: #fff;
+
+   background-color: #ad0000;
+
+   border-radius: 5px;
+}
+
+.hero-lead {
+   margin-bottom: 30px;
+}
+
+.hero-linkGroup {
+   position: relative;
+}
