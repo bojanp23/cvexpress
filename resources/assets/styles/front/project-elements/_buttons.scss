@@ -31,9 +31,9 @@
 }
 
 .button--primary {
-   background-color: #ad0000;
+   background-color: $fontColor--primary;
 
-   border: 1px solid #ad0000;
+   border: 1px solid $fontColor--primary;
 
    &:hover,
    &:focus {
@@ -50,9 +50,9 @@
 
    &:hover,
    &:focus {
-      background-color: #ad0000;
+      background-color: $fontColor--primary;
 
-      border: 1px solid #ad0000;
+      border: 1px solid $fontColor--primary;
    }
 }
 
@@ -74,10 +74,10 @@
 
    &:hover,
    &:focus {
-      color: #ad0000;
+      color: $fontColor--primary;
 
       background-color: #fff;
 
-      border: 1px solid #ad0000;
+      border: 1px solid $fontColor--primary;
    }
 }

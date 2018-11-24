@@ -68,7 +68,7 @@
 
    font-size: 16px;
 
-   color: #ad0000;
+   color: $fontColor--primary;
 
    &::after {
       position: absolute;
@@ -80,7 +80,7 @@
 
       content: "";
 
-      background-color: #ad0000;
+      background-color: $fontColor--primary;
 
       @media(max-width: 460px) {
          right: 0;

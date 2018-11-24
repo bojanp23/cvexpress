@@ -37,14 +37,15 @@
 
       content: "";
 
-      background: #ad0000;
+      background: $fontColor--primary;
 
       transition: width .2s;
     }
 
     &:hover,
-    &:focus {
-      color: #ad0000;
+    &:focus,
+    &.active {
+      color: $fontColor--primary;
       background: transparent;
 
       &::after {
@@ -57,7 +58,7 @@
 }
 
 .navbar-toggle {
-  background-color: #ad0000;
+  background-color: $fontColor--primary;
 
   .icon-bar {
     height: 1px;
@@ -103,12 +104,14 @@
     content: "";
 
     background: #fff;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
   }
 }
 
 .navbar-nav-listItem {
-
-
   &:last-child {
     &:hover,
     &:focus {
@@ -116,6 +119,62 @@
         width: 0;
 
         content: "";
+      }
+    }
+  }
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  right: auto !important;
+
+  background-color: #000;
+
+  border: 0;
+
+  box-shadow: none;
+
+  li {
+    a {
+      position: relative;
+
+      margin: 5px 0;
+
+      color: #fff;
+
+      &::after {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+
+        display: block;
+        z-index: 1;
+
+        width: 0;
+        height: 2px;
+
+        margin: 0 auto;
+
+        content: "";
+
+        background: $fontColor--primary;
+
+        transition: width .2s;
+      }
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: $fontColor--primary;
+        background: transparent;
+
+        &::after {
+          width: 100%;
+        }
       }
     }
   }

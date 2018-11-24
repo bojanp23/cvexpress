@@ -1,9 +1,9 @@
 .footer {
   padding-top: 40px;
 
-  color: #b6b6b6;
+  color: $fontColor--gray;
 
-  background-color: #222;
+  background-color: $backgroundColor--grayDark;
 }
 
 .footer-content {
@@ -94,7 +94,7 @@
 
 .footer-link {
   position: relative;
-  color: #b6b6b6;
+  color: $fontColor--gray;
 
   text-decoration: none;
 
@@ -111,14 +111,14 @@
 
     content: "";
 
-    background-color: #ad0000;
+    background-color: $fontColor--primary;
 
     transition: width .2s, color .2s;
   }
 
   &:hover,
   &:focus {
-    color: #ad0000;
+    color: $fontColor--primary;
 
     text-decoration: none;
 
@@ -205,7 +205,7 @@
     text-align: center;
     font-family: FontAwesome;
 
-    color: #b6b6b6;
+    color: $fontColor--gray;
 
     content: "";
 
@@ -218,7 +218,7 @@
     text-decoration: none;
 
     &::before {
-      color: #ad0000;
+      color: $fontColor--primary;
     }
   }
 }
@@ -245,7 +245,7 @@
   padding: 20px 0;
 
   font-size: 14px;
-  color: #b6b6b6;
+  color: $fontColor--gray;
 
   text-align: center;
 
