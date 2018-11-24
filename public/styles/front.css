@@ -8574,6 +8574,11 @@ html {
     .appInfo-column {
       float: left;
       width: 33.3333333333%; } }
+  @media (max-width: 460px) {
+    .appInfo-column {
+      margin-bottom: 50px; }
+      .appInfo-column:last-child {
+        margin-bottom: 0; } }
 
 .appInfo-title {
   position: relative;
@@ -8620,11 +8625,15 @@ html {
   padding: 20px;
   background: transparent;
   border: 0; }
-  @media (max-width: 460px) {
-    .navbar .navbar-collapse,
-    .navbar .navbar-form {
-      border: 0;
-      box-shadow: none; } }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    margin-right: 0;
+    margin-left: 0; }
+    @media (max-width: 460px) {
+      .navbar .navbar-collapse,
+      .navbar .navbar-form {
+        border: 0;
+        box-shadow: none; } }
   .navbar .navbar-nav-link::after {
     position: absolute;
     bottom: -1px;
@@ -8644,6 +8653,12 @@ html {
     .navbar .navbar-nav-link:hover::after, .navbar .navbar-nav-link:focus::after {
       width: 100%;
       content: ""; }
+
+.navbar-toggle {
+  background-color: #ad0000; }
+  .navbar-toggle .icon-bar {
+    height: 1px;
+    background-color: #000; }
 
 .navbar-brand {
   height: auto;
@@ -8784,6 +8799,10 @@ html {
     .sectionSlider-subtitle {
       text-align: center; } }
 
+@media (max-width: 460px) {
+  .sectionSlider-lead {
+    text-align: center; } }
+
 .slick-prev,
 .slick-next {
   width: 50px;
@@ -8847,7 +8866,7 @@ html {
   @media (max-width: 460px) {
     .footer-column--large {
       padding: 0 30px;
-      margin: 0 0 15px; } }
+      margin: 0 0 40px; } }
 
 .footer-column--small {
   position: relative;
@@ -8860,7 +8879,10 @@ html {
       width: 25%; } }
   @media (max-width: 460px) {
     .footer-column--small {
-      text-align: center; } }
+      text-align: center;
+      margin: 0 0 50px; }
+      .footer-column--small:last-child {
+        margin-bottom: 0; } }
 
 .footer-column-title {
   margin: 15px 0;
@@ -8875,6 +8897,9 @@ html {
 
 .footer-lead {
   margin-bottom: 20px; }
+  @media (max-width: 460px) {
+    .footer-lead {
+      text-align: center; } }
 
 .footer-list {
   padding: 0;
@@ -8933,6 +8958,10 @@ html {
 .footer-link--imageVisa::before {
   background-image: url("../images/cards.jpg");
   background-position: -45px 0; }
+
+@media (max-width: 460px) {
+  .footer-socialIcons {
+    text-align: center; } }
 
 .footer-socialLink {
   display: inline-block;
