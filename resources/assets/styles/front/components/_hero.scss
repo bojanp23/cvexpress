@@ -5,6 +5,8 @@
    margin-top: -135px;
 
    background-image: url(../images/hero.jpg);
+   background-position: center;
+   background-size: cover;
 
    @media(max-width: 460px) {
       height: auto;
@@ -18,7 +20,7 @@
 }
 
 .hero-content {
-   width: 75%;
+   width: 80%;
 
    color: #fff;
 
@@ -31,6 +33,7 @@
     margin: 0 0 30px;
 
    font-size: 78px;
+   font-weight: bold;
 
    color: #fff;
 
@@ -56,6 +59,7 @@
 }
 
 .hero-lead {
+   padding-right: 30px;
    margin-bottom: 30px;
 }
 
