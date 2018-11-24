@@ -14,18 +14,93 @@
 
  .section {
     padding: 100px 0;
+
+    @media(max-width: 460px) {
+      padding: 50px 0;
+   }
 }
 
-.section--testimonials {
-   min-height: 550px;
-
+.section--secondary {
    background-image: url("../images/bg.jpg");
 }
 
 .section-title {
-   margin: 0 0 40px;
+   margin: 0 0 30px;
 
    font-weight: bold;
 
    text-align: center;
+}
+
+.section-subtitle {
+   display: inline-block;
+
+   padding: 5px 15px;
+   margin: 0 0 20px;
+
+   font-size: 18px;
+   font-weight: normal;
+
+   color: #fff;
+
+   background-color: #ad0000;
+
+   border-radius: 5px;
+}
+
+.section-lead {
+   margin: 0 0 30px;
+}
+
+.section-content--center {
+   text-align: center;
+}
+
+.section--transformCv {
+   padding-bottom: 80px;
+
+   @media(max-width: 460px) {
+     padding-bottom: 30px;
+  }
+}
+
+.transformCv {
+   @include make-row(0);
+}
+
+.transformCv-column {
+   @include make-xs-column(6);
+   position: relative;
+
+   &:first-child {
+      &::after {
+         position: absolute;
+         top: 50%;
+         right: -26px;
+
+         width: 50px;
+         height: 73px;
+
+         content: "";
+
+         background-image: url("../images/arrow.png");
+         background-size: cover;
+
+         transform: translateY(-50%);
+
+         @media(max-width: 460px) {
+            right: -14px;
+
+            width: 25px;
+            height: 36px;
+         }
+      }
+   }
+
+   @media(max-width: 460px) {
+     img {
+        width: 100%;
+        height: auto;
+     }
+   }
 }
